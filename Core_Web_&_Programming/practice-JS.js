@@ -69,5 +69,4 @@ Object.seal(otherProfile);
 delete otherProfile.name; // not effects
 otherProfile.name = "dharam"; // it works and change "karam" => "dharam"
 console.table([otherProfile])
-
 }
