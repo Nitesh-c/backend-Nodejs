@@ -96,3 +96,24 @@ console.log(final);
 let oddNums = [1,3,5,7,9,11];
     console.log(oddNums.filter((num)=> num>=5));
 }
+
+
+console.clear()
+// variable
+{
+function square(num){
+    let result = (num*num);
+    return result;
+}
+// console.log(result); // error !
+console.log(square(34))
+
+var score = 12;
+console.log(score)
+
+const score2 = 32;
+console.log(score2);
+
+
+// for learing more about let, const, var => https://www.w3schools.com/js/js_variables.asp
+}
