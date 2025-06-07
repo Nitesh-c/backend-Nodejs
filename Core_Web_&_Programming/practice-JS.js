@@ -20,6 +20,9 @@ console.log(
 let age = 12;
 let userScore = 987;
 let decimalNum = 12344.67;
+let weiredNum = 1233;
+console.log(weiredNum.toFixed(9));
+
 
     // boolean
 let isAdmin = false;
@@ -116,4 +119,47 @@ console.log(score2);
 
 
 // for learing more about let, const, var => https://www.w3schools.com/js/js_variables.asp
+}
+
+console.clear()
+// operators
+{
+    console.log( 2 + 2 );
+    console.log( 2 - 1 );
+    console.log( 2 * 3 );
+    console.log( 2 % 2 );
+    console.log( undefined || 2 );
+    
+    /*
+"" = false;
+" " = true;
+1 = true;
+0 = false;
+null = false;
+undefined = false;
+    */
+
+console.log(Boolean(" "));
+console.log(Boolean(null));
+console.log(Boolean(undefined));
+
+// falsy values = 0, 0-, false, "", undefined, null, 0n
+
+if(0 || -0 || false || "" || undefined || null || 0n){
+    console.log("I am bad"); // this code is never execute
+}else{
+    console.log("Jai shree Ram"); // always this code is execute
+}
+   
+// conversion
+let someVariable = 0;
+// let someVariable = 1;
+
+console.log(Boolean(someVariable));
+
+console.log("hello world".toString());
+let num = 12;
+console.log(num.toString());
+// let weiredNum = 1233;
+// console.log(weiredNum.toFixed(9));
 }
