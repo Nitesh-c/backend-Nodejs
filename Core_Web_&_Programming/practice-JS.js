@@ -70,3 +70,29 @@ delete otherProfile.name; // not effects
 otherProfile.name = "dharam"; // it works and change "karam" => "dharam"
 console.table([otherProfile])
 }
+console.clear();
+
+// Arrays
+{
+    let myBestFriends = ["pritam", "karam", "dharam", "i-own"];
+    console.log(myBestFriends[myBestFriends.length-1])
+    let someNums = [1,2,3,4,5,6,7,8,9,10];
+
+// let find sum using reduce method
+    let totalOfNums = someNums.reduce((accum, curr)=> {return accum + curr});
+    // let totalOfNums = someNums.reduce((accum, curr)=>  accum + curr);
+    console.log(totalOfNums);
+
+// map
+    let name = myBestFriends[0];
+    let fancyName = name.split("");
+    console.log(fancyName);
+
+let final = fancyName.map((l)=> l+"!")
+console.log(final);
+
+// filter
+
+let oddNums = [1,3,5,7,9,11];
+    console.log(oddNums.filter((num)=> num>=5));
+}
