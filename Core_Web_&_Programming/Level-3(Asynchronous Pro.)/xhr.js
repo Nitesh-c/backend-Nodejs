@@ -14,17 +14,17 @@
 
 
 // let make a callback hell
-function  sendRequest(url, callback) {
-  const xhr = new XMLHttpRequest();
-  xhr.open("GET", url);
- xhr.onload = function () {
-    return (JSON.parse(xhr.responseText))
- }
-  xhr.send();
+// function  sendRequest(url, callback) {
+//   const xhr = new XMLHttpRequest();
+//   xhr.open("GET", url);
+//  xhr.onload = function () {
+//     return (JSON.parse(xhr.responseText))
+//  }
+//   xhr.send();
 
-}
+// }
 
-let myData = sendRequest('https://dummyjson.com/users', () => {})
-console.log(myData);
+// let myData = sendRequest('https://dummyjson.com/users', () => {})
+// console.log(myData);
 
 
