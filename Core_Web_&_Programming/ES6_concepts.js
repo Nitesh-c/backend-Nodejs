@@ -10,7 +10,7 @@ userLoginMessage("admin")
 
 // this is how we copy the object in deep
 let userProfile = {
-    "name": "nitesh",
+    "name": "nitesh", 
     "email": "niteshbhai123@gmail.com",
     "password": "nitesh123"
 }
