@@ -6,3 +6,11 @@
 // })
 // myFirstPro.catch("erro")
 // console.log(myFirstPro)
+
+
+// Lets really learn 
+let myPro = new Promise((resolve, reject)=>{
+    setTimeout(())
+})
+
+
