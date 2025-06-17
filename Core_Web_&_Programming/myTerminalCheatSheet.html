@@ -21,10 +21,6 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-h2{
-    font-size: 3.5rem;
-    color: #ecd5d5;
-}
 ul{
     font-size: 2.1rem;
     list-style-position: inside;
@@ -34,11 +30,18 @@ main{
     border: 3px solid grey;
     padding: 20px 30px;
 }
+p{
+    color: red;
+}
+.head{
+    font-size: 2rem;
+    font-weight: 900
+}
     </style>
 </head>
 <body>
     <main>
-    <h2>Basics Commands</h2>
+    <p class="head">Basics Commands</p>
     <ul>
         <li><code>sudo su</code></li>
         <li><code>sudo apt-get update</code></li>
@@ -57,6 +60,51 @@ main{
         <li><code>git checkout newbranch</code></li>
     </ul>
     <a href="https://docs.chaicode.com/youtube/chai-aur-git/introduction/">github docs for revision</a>
+
+    <section class="advanced-section">
+        <ul>
+            <li>
+                <p>SSH Server</p>
+                <ul>
+                    <li>sudo systemctl start ssh</li>
+                    <li>sudo systemctl stop ssh</li>
+                    <li>sudo systemctl status ssh</li>
+                    <li>sudo systemctl restart ssh</li>                       
+                </ul>
+            </li>
+
+            <li>
+                <p>Configure the SSH config file if problem</p>
+                <ul>
+                    <li>sudo cd /etc/.ssh/</li>
+                    <li><span>`edit the config file`</span> <code>sudo nano config...</code></li>
+                </ul>
+            </li>
+
+            <li>
+                <p>How to Copy file from one server to another</p>
+                <ul>
+                    <li>scp fileName_or_PATH username:ipaddress:Path</li>
+                    <li>`then enter the password` password123 `like this`</li>
+                </ul>
+            </li>
+
+            <li>
+                <p>Some Commands I have learned</p>
+                <ul>
+                    <li>whoami = print the currentuser</li>
+                    <li>su = for change the user</li>
+                    <li>users = print all the user</li>
+                    <li>ip --a = show all details of IP</li>
+                    <li>ip addr = show IP details</li>
+                    <li>ifconfig = it also show IP details</li>
+                    <li>ipconfig = show IP details in Windows System</li>
+                    <li>free =  show free memory</li>
+                    <li>df = show total disk space in the file system</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
     </main>
 </body>
 </html>
