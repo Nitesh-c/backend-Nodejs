@@ -4,11 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
-    <link rel="stylesheet" type="css/text" href="./style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body >
     <main>
-            
+            <h1>Currency Converter</h1>               
+                <input id="input-amount" type="number" maxlength="12" minlength="1" required value="0">
+                <select name="countryFrom" id="countryTo">
+                    <option value="INDIA">INDIA</option>
+                    <option value="USA">USA</option>
+                    <option value="EUROPE">EUROPE</option>
+                    <option value="CHINA">CHINA</option>
+                </select>
+
+                <button id="convert-btn">Convert</button>
+
+                    <p id="answer-box">00</p>
+
     </main>
+    <script>
+
+    </script>
 </body>
 </html>
