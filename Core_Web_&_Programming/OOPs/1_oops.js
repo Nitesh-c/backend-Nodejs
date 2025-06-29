@@ -13,3 +13,4 @@ const student = {
 student.getFullData()
 // this is methods
 
+// -------------------------------------------------
