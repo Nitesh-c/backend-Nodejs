@@ -20,3 +20,21 @@ console.log(void("nitesh"))
 console.log(void(true))
 console.log(void([12,12,12,12,12]))
 console.log(void({a:23, b:134}))
+
+// delete
+
+const youtubeUser = {
+    username: "nitesh_12", 
+    "first Name": "Nitesh",
+    "last Name": "Kumar",
+    isAdmin: false,
+    isLoggedIn: true
+};
+
+// let's delete the isAdmin property from youtubeuser object
+
+delete youtubeUser.isAdmin;
+// it return true or false;
+
+let x = 12;
+delete x; // not work but not threw error it return false; works only on objects 
