@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login & Signup</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="./script.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h2 id="page-heading">Log In</h2>
+        <div class="underline"></div>
+        <form>
+          <div class="username-input-field">
 
-</body>
+            <div class="main-input-field">
+                <i class="fa-solid fa-user"></i> 
+              <input id="usernameInput" class="username" type="text" placeholder="Name"/>
+            </div>
+            <!--main-input-field end-->
+            <small class="username-errorMessage">Try Again: Invalid Input !</small>
+          </div><!--username-input-field end-->
+
+
+          <div class="email-input-field">
+            <div class="main-input-field">
+                <i class="fa-solid fa-envelope-open"></i>
+              <input id="emailInput" class="email" type="email" placeholder="Email"/>
+            </div>
+            <!--main-input-field end-->
+            <small class="email-errorMessage">Try Again: Invalid Input !</small>
+          </div><!--email-input-field end-->
+
+
+          <div class="password-input-field">
+            <div class="main-input-field">
+                <i class="fa-solid fa-unlock-keyhole"></i>
+              <input id="passwordInput" class="password" type="password" placeholder="Password"/>
+            </div>
+            <!--main-input-field end-->
+            <small class="username-errorMessage">Try Again: Invalid Input !</small>
+          </div><!--password-input-field end-->
+
+          <div class="buttons">
+            <button id="login-btn" class="button" type="button">Login</button>
+            <button id="login-btn" class="button" type="button">Signup</button>
+          </div> <!--button div end-->
+        </form>
+      </div><!--box end-->
+    </div><!--container end-->
+  </body>
 </html>
