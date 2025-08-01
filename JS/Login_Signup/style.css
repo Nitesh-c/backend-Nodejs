@@ -30,13 +30,18 @@ body, html{
 #page-heading{
     font-size: 2rem;
     color: green;
+    transition: all .5s ease-in-out;
+    opacity: 1;
 }
 .underline{
-    width: 5rem;
+    width: 2rem;
     height: 5px;
     background-color: green;
     border-radius: 1rem;
     margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all .5s ease-in-out .2s;
 }
 
 .form{
@@ -71,7 +76,6 @@ input{
 }
 
 .main-input-field:hover{
-    outline: 2px solid green;
     color: green;
 }
 
@@ -93,7 +97,7 @@ button{
     background-color: green;
     color: white;
     cursor: pointer;
-    transition: all .0s ease-in-out;
+    transition: transform .5s ease-in-out .2s;
 }
 
 button.disable{
@@ -104,4 +108,9 @@ button.disable{
 .username-errorMessage, .email-errorMessage, .password-errorMessage{
     color: red;
     display: none;
+}
+
+.usernamefield{
+    height: 3rem;
+    transition: all 0.5s ease-in-out 0.2s;
 }
