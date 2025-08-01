@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login & Signup</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +14,11 @@
   <body>
     <div class="container">
       <div class="box">
-        <h2 id="page-heading">Log In</h2>
+        <h2 id="page-heading">Sign Up</h2>
         <div class="underline"></div>
         <form class="form">
-          <div class="username input-field">
+            
+          <div class="usernamefield input-field">
             <div class="main-input-field">
                 <i class="fa-solid fa-user"></i> 
               <input id="usernameInput" class="username" type="text" placeholder="Name"/>
@@ -47,8 +48,8 @@
           </div><!--password-input-field end-->
 
           <div class="buttons">
-            <button id="login-btn" class="button" type="button">Login</button>
-            <button id="login-btn" class="button disable" type="button">Signup</button>
+            <button id="signup-btn" class="button" type="button">Signup</button>
+            <button id="login-btn" class="button disable" type="button">Login</button>
           </div> <!--button div end-->
         </form>
       </div><!--box end-->

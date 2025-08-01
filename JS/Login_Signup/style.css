@@ -36,7 +36,7 @@ body, html{
     height: 4px;
     background-color: green;
     border-radius: 1rem;
-    margin: .2rem auto 1.5rem auto;
+    margin-bottom: 2rem;
 }
 
 .form{
@@ -59,6 +59,7 @@ input{
     outline: none;
     padding-left: 4px;
     font-size: 1.3rem;
+    position: relative;
 }
 
 .main-input-field{
@@ -92,6 +93,7 @@ button{
     background-color: green;
     color: white;
     cursor: pointer;
+    transition: all .0s ease-in-out;
 }
 
 button.disable{
