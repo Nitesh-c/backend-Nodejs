@@ -32,8 +32,8 @@ body, html{
     color: green;
 }
 .underline{
-    width: 30px;
-    height: 4px;
+    width: 5rem;
+    height: 5px;
     background-color: green;
     border-radius: 1rem;
     margin-bottom: 2rem;
@@ -99,4 +99,9 @@ button{
 button.disable{
     background-color: grey;
     color: white;
+}
+
+.username-errorMessage, .email-errorMessage, .password-errorMessage{
+    color: red;
+    display: none;
 }
