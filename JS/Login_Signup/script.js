@@ -2,7 +2,8 @@ let nameInputDiv = document.querySelector(".usernamefield");
 let loginBtn = document.querySelector("#login-btn");
 let underline = document.querySelector(".underline");
 let signupBtn = document.querySelector("#signup-btn");
-let heading = document.querySelector("#page-heading")
+let heading = document.querySelector("#page-heading");
+
 loginBtn.addEventListener("click", function(){
     signupBtn.classList.add("disable");
     underline.style.transform = "translateX(100%)"
@@ -13,7 +14,8 @@ loginBtn.addEventListener("click", function(){
     setTimeout(()=>{
         heading.style.opacity = 1;
         heading.textContent = "Sign In"
-    }, 500)
+    }, 500);
+    loginClickCount++
 })
 
 signupBtn.addEventListener("click", function(){
@@ -28,3 +30,4 @@ signupBtn.addEventListener("click", function(){
         heading.textContent = "Sign Up"
     }, 500)
 })
+
