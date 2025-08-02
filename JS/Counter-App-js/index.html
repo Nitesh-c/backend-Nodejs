@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Counter App in JavaScript | 1. Simple Project</title>
+    <script src="./script.js" defer></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Righteous", sans-serif;
+            font-family: 2rem;
+            font-weight: 400;
+            font-style: normal;
+        }
+        html, body{
+            height: 100vh;
+            width: 100%;
+            padding: 4rem;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            text-align: center;
+        }
+        section.reset #reset{
+            background-color: red;
+        }
+
+        button{
+            color: white;
+            padding: .7rem 2rem;
+            margin: 2rem 0 2rem 0;
+            outline: none;
+            border: none;
+            border-radius: .5rem;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        section.buttons #increase, section.buttons #decrease{
+            background-color: green;
+        } 
+        section.display-number #coutner{
+            font-size: 3rem;
+        }
+        header h1{
+            font-size: 3rem;
+        }
+        footer{
+            position: fixed;
+            bottom: 3rem;
+            right: 4rem;
+        }
+        footer .contact{
+            text-align: start;
+            background-color: rgba(255, 0, 0, 0.623);
+            padding: 2rem;
+            border-top-left-radius: 3rem;
+            border-bottom-right-radius: 3rem;
+            border: 1px solid #111;
+            box-shadow: 0px 3px 4px grey;
+            color: white;
+        }
+        a{
+            color: white;
+        }
+        a:hover{
+            color: greenyellow;
+        }
+        section.user-input-number div input{
+            display: inline-block;
+            width: 4rem;
+            width: 5rem;
+            padding: .4rem;
+            font-size: 1rem;
+            border-radius: .4rem;
+            outline: none;
+            border: 1px solid grey;
+        }
+        #description, span{
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Counter App</h1>
+        </header> <!--head end-->
+
+        <main>
+            <section class="display-number">
+                <h2 id="coutner">0</h2>
+            </section> <!--display-number end-->
+
+            <section class="user-input-number">
+                <div>
+                    <span>Increment/Decrement by:</span>
+                    <input type="number" id="givenValue" placeholder="enter">
+                </div>
+            </section>
+
+            <section class="buttons">
+                <button id="decrease">-</button>
+                <button id="increase">+</button>
+            </section> <!--buttons end-->
+
+            <section class="reset">
+                <button id="reset">Reset</button>
+                <p id="description">Keyboard shortcuts: + to increment, - to decrement, Page Up/Down to change step value </p>
+            </section><!--reset end-->
+        </main> <!--main end-->
+
+        <footer>
+<div class="contact">
+    <p>Created by: Nitesh</p>
+    <address>Email: <a href="mailto:">niteshbhai0911@gmail.com</a></address>
+    <a href="https://github.com/Nitesh-c/">Github Profile</a>
+    <br>
+    <a href="https://project-link-nitesh.netlify.app/">Project Links</a>
+</div>
+        </footer>
+    </div> <!--container div end-->
+</body>
+</html>
